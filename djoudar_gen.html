@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voucher Generator</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Voucher Generator</h1>
+        <img src="logo.png" alt="Agency Logo">
+    </header>
+
+    <form id="voucherForm">
+        <label for="hotelName">Hotel Name:</label>
+        <input type="text" id="hotelName" required>
+
+        <label for="bookingId">Booking ID:</label>
+        <input type="text" id="bookingId">
+
+        <label for="clientName">Main Client Name:</label>
+        <input type="text" id="clientName" required>
+
+        <label for="additionalClients">Additional Clients:</label>
+        <input type="text" id="additionalClients">
+
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" required>
+
+        <label for="checkout">Check-out Date:</label>
+        <input type="date" id="checkout" required>
+
+        <label for="roomType">Room Type:</label>
+        <input type="text" id="roomType" required>
+
+        <label for="mealType">Meal Type:</label>
+        <select id="mealType">
+            <option value="Bed & Breakfast">Bed & Breakfast</option>
+            <option value="Half Board">Half Board</option>
+            <option value="All Inclusive">All Inclusive</option>
+            <option value="Ultra All Inclusive">Ultra All Inclusive</option>
+        </select>
+
+        <button type="button" onclick="generatePDF()">Generate Voucher</button>
+    </form>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
